@@ -29,7 +29,7 @@ def play_game():
         word, hint = random.choice(DIPLOMACY_WORDS)
 
         while (word, hint) in used:
-        word, hint = random.choice(DIPLOMACY_WORDS)
+            word, hint = random.choice(DIPLOMACY_WORDS)
 
         used.append((word, hint))
 
@@ -44,20 +44,20 @@ def play_game():
         guess = input("Guess the word (or type 'hint' / 'skip' / 'quit'): ").strip().lower()
 
         if guess == "hint":
-        print(f"\nHint: {hint}\n")
+            print(f"\nHint: {hint}\n")
 
         guess = input("Your guess (or 'skip' / 'quit'): ").strip().lower()
 
         if guess == "quit":
-        print("Thanks for playing!")
-        break
+            print("Thanks for playing!")
+            break
         elif guess == "skip":
-        print(f"Skipped! The word was '{word}'.")
+            print(f"Skipped! The word was '{word}'.")
         elif guess == word:
-        score += 1
-        print("✅  Correct!")
+            score += 1
+            print("✅  Correct!")
         else:
-        print(f"❌ Sorry, the word was '{word}'.")
+            print(f"❌ Sorry, the word was '{word}'.")
 
         round_num += 1
 
