@@ -30,3 +30,4 @@ A command-line word scramble game themed around diplomacy and international rela
 
 - The screen-clear function uses `cls` on Windows and `clear` on macOS/Linux, so replaying the game starts with a fresh terminal.
 - Scoring bands and messages can be tweaked directly in the `play_game()` function if you want to adjust difficulty or add new rank titles.
+- This is based on a project from Scrimba's "Learn Python" course at https://scrimba.com. Check it out!
