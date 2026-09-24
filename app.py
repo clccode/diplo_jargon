@@ -45,8 +45,7 @@ def play_game():
 
         if guess == "hint":
             print(f"\nHint: {hint}\n")
-
-        guess = input("Your guess (or 'skip' / 'quit'): ").strip().lower()
+            guess = input("Your guess (or 'skip' / 'quit'): ").strip().lower()
 
         if guess == "quit":
             print("Thanks for playing!")
